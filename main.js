@@ -82,6 +82,16 @@ for (let team in teams) {
 }
 
 //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+const teamFouls = [];
+
+for (let team in teams) {
+    teamFouls.push({
+        name: teams[team].name,
+        fouls: teams[team].fouls
+    })
+}
+
+console.log(teamFouls);
 
 
 
